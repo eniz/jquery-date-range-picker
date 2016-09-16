@@ -1657,11 +1657,11 @@
 			box.find('.selected-days').hide();
 			if (opt.start)
 			{
-				box.find('.start-day').html(getDateString(new Date(parseInt(opt.start))));
+				box.find('.start-day').html(moment(opt.start).format('D MMM YYYY'));
 			}
 			if (opt.end)
 			{
-				box.find('.end-day').html(getDateString(new Date(parseInt(opt.end))));
+				box.find('.end-day').html(moment(opt.end).format('D MMM YYYY'));
 			}
             var dateRange;
 			if (opt.start && opt.singleDate)
