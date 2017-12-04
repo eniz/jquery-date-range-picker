@@ -33,6 +33,7 @@
     "moment": ">=2.8.1",
     "jquery": ">=1.3.2"
   },
+  "main": "dist/jquery.daterangepicker.min.js",
   "devDependencies": {
     "del": "^2.2.0",
     "gulp": "~3.9.1",
