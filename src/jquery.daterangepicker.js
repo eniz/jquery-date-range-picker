@@ -1925,6 +1925,16 @@
 		{
 			showMonth(opt.month1, 'month1');
 			showMonth(opt.month2, 'month2');
+			showMonth(addNewMonth(opt.month1, 2), 'month3');
+			showMonth(addNewMonth(opt.month1, 3), 'month4');
+			showMonth(addNewMonth(opt.month1, 4), 'month5');
+			showMonth(addNewMonth(opt.month1, 5), 'month6');
+			showMonth(addNewMonth(opt.month1, 6), 'month7');
+			showMonth(addNewMonth(opt.month1, 7), 'month8');
+			showMonth(addNewMonth(opt.month1, 8), 'month9');
+			showMonth(addNewMonth(opt.month1, 9), 'month10');
+			showMonth(addNewMonth(opt.month1, 10), 'month11');
+			showMonth(addNewMonth(opt.month1, 11), 'month12');
 		}
 
 		function compare_month(m1,m2)
@@ -1946,6 +1956,10 @@
 		function nextMonth(month)
 		{
 			return moment(month).add(1, 'months').toDate();
+		}
+
+		function addNewMonth(month, count) {
+			return moment(month).add(count, 'months').toDate();
 		}
 
 		function prevMonth(month)
@@ -2009,6 +2023,38 @@
 			{
 				html += '<div class="gap">'+getGapHTML()+'</div>' +
 					'<table class="month2" cellspacing="0" border="0" cellpadding="0"><thead><tr class="caption"><th style="width:27px;">' + (!opt.stickyMonths ? '<span class="prev">&lt;</span>': '') + '</th><th colspan="'+_colspan+'" class="month-name"></th><th style="width:27px;"><span class="next">&gt;</span></th></tr><tr class="week-name">'+getWeekHead()+'</thead><tbody></tbody></table>';
+
+				// 3
+				html += '<table class="month3" cellspacing="0" border="0" cellpadding="0"><thead><tr class="caption"><th style="width:27px;">' + (!opt.stickyMonths ? '<span class="prev">&lt;</span>' : '') + '</th><th colspan="' + _colspan + '" class="month-name"></th><th style="width:27px;"><span class="next">&gt;</span></th></tr><tr class="week-name">' + getWeekHead() + '</thead><tbody></tbody></table>';
+
+				// 4
+				html += '<table class="month4" cellspacing="0" border="0" cellpadding="0"><thead><tr class="caption"><th style="width:27px;">' + (!opt.stickyMonths ? '<span class="prev">&lt;</span>' : '') + '</th><th colspan="' + _colspan + '" class="month-name"></th><th style="width:27px;"><span class="next">&gt;</span></th></tr><tr class="week-name">' + getWeekHead() + '</thead><tbody></tbody></table>';
+
+				// 5
+				html += '<table class="month5" cellspacing="0" border="0" cellpadding="0"><thead><tr class="caption"><th style="width:27px;">' + (!opt.stickyMonths ? '<span class="prev">&lt;</span>' : '') + '</th><th colspan="' + _colspan + '" class="month-name"></th><th style="width:27px;"><span class="next">&gt;</span></th></tr><tr class="week-name">' + getWeekHead() + '</thead><tbody></tbody></table>';
+
+				// 6
+				html += '<table class="month6" cellspacing="0" border="0" cellpadding="0"><thead><tr class="caption"><th style="width:27px;">' + (!opt.stickyMonths ? '<span class="prev">&lt;</span>' : '') + '</th><th colspan="' + _colspan + '" class="month-name"></th><th style="width:27px;"><span class="next">&gt;</span></th></tr><tr class="week-name">' + getWeekHead() + '</thead><tbody></tbody></table>';
+
+				// 7
+				html += '<table class="month7" cellspacing="0" border="0" cellpadding="0"><thead><tr class="caption"><th style="width:27px;">' + (!opt.stickyMonths ? '<span class="prev">&lt;</span>' : '') + '</th><th colspan="' + _colspan + '" class="month-name"></th><th style="width:27px;"><span class="next">&gt;</span></th></tr><tr class="week-name">' + getWeekHead() + '</thead><tbody></tbody></table>';
+
+				// 8
+				html += '<table class="month8" cellspacing="0" border="0" cellpadding="0"><thead><tr class="caption"><th style="width:27px;">' + (!opt.stickyMonths ? '<span class="prev">&lt;</span>' : '') + '</th><th colspan="' + _colspan + '" class="month-name"></th><th style="width:27px;"><span class="next">&gt;</span></th></tr><tr class="week-name">' + getWeekHead() + '</thead><tbody></tbody></table>';
+
+				// 9
+				html += '<table class="month9" cellspacing="0" border="0" cellpadding="0"><thead><tr class="caption"><th style="width:27px;">' + (!opt.stickyMonths ? '<span class="prev">&lt;</span>' : '') + '</th><th colspan="' + _colspan + '" class="month-name"></th><th style="width:27px;"><span class="next">&gt;</span></th></tr><tr class="week-name">' + getWeekHead() + '</thead><tbody></tbody></table>';
+
+				// 10
+				html += '<table class="month10" cellspacing="0" border="0" cellpadding="0"><thead><tr class="caption"><th style="width:27px;">' + (!opt.stickyMonths ? '<span class="prev">&lt;</span>' : '') + '</th><th colspan="' + _colspan + '" class="month-name"></th><th style="width:27px;"><span class="next">&gt;</span></th></tr><tr class="week-name">' + getWeekHead() + '</thead><tbody></tbody></table>';
+
+				// 11
+				html += '<table class="month11" cellspacing="0" border="0" cellpadding="0"><thead><tr class="caption"><th style="width:27px;">' + (!opt.stickyMonths ? '<span class="prev">&lt;</span>' : '') + '</th><th colspan="' + _colspan + '" class="month-name"></th><th style="width:27px;"><span class="next">&gt;</span></th></tr><tr class="week-name">' + getWeekHead() + '</thead><tbody></tbody></table>';
+
+				// 12
+				html += '<table class="month12" cellspacing="0" border="0" cellpadding="0"><thead><tr class="caption"><th style="width:27px;">' + (!opt.stickyMonths ? '<span class="prev">&lt;</span>' : '') + '</th><th colspan="' + _colspan + '" class="month-name"></th><th style="width:27px;"><span class="next">&gt;</span></th></tr><tr class="week-name">' + getWeekHead() + '</thead><tbody></tbody></table>';
+
+
 			}
 				//+'</div>'
 			html +=	'<div style="clear:both;height:0;font-size:0;"></div>' +
