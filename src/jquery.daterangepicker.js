@@ -2016,7 +2016,7 @@
 			}
 
 			var _colspan = opt.showWeekNumbers ? 6 : 5;
-			colspan = 7;
+			_colspan = 7;
 			html += '<div class="month-wrapper">' +
 				'<table class="month1" cellspacing="0" border="0" cellpadding="0"><thead><tr class="caption"><th style="width:27px;"><span class="prev">&lt;</span></th><th colspan="'+_colspan+'" class="month-name"></th><th style="width:27px;">' + (opt.singleDate || !opt.stickyMonths ? '<span class="next">&gt;</span>': '') + '</th></tr><tr class="week-name">'+getWeekHead()+'</thead><tbody></tbody></table>';
 
